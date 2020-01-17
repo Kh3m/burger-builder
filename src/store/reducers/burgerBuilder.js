@@ -54,7 +54,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 ingredients: {
                     ...state.ingredients,
-                    [state.ingredients[action.ingredientName]]: {
+                    [action.ingredientName]: {
                         ...state.ingredients[action.ingredientName],
                         quantity: state.ingredients[action.ingredientName].quantity - 1
                     }
